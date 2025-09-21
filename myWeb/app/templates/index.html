@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- 語言設定為繁中 -->
+<!-- <html lang="zh-Hant">  -->
+
+<head>
+    <!-- 指定網頁的編碼 -->
+    <meta charset="UTF-8">
+    <title>Virtual Try-On DEMO</title>
+    <link rel="stylesheet" href="../static/dist/css/styles.css">
+    <!-- <style>
+      body { font-family: sans-serif; text-align: center; }
+      .img-box { margin: 20px; display: inline-block; }
+      img { width: 256px; height: auto; border: 1px solid #ccc; }
+    </style> -->
+</head>
+
+<body>
+    <h1>
+        Virtual Try-On Demo
+    </h1>
+
+    <!-- 使用form讓js輕鬆使用getElementById取得資料 -->
+    <form id="upload-form" enctype="multipart/form-data">
+        <div>
+            <label for="input_image_1">上傳原始圖片</label>
+            <input type="file" name="origin_person_image" id="origin_person_image" accept="image/*"><br><br>
+        </div>
+        <div>
+            <label for="input_image_2">上傳服裝圖片</label>
+            <input type="file" name="want_tryon_cloth" id="want_tryon_cloth" accept="image/*"><br><br>
+        </div>
+        <button type="button" onclick="ClothWarpingGenerate()">取得服裝變形結果</button>
+    </form>
+
+    <div>
+        <div class="img-box">
+            <h3>原始圖片</h3>
+            <img id="show_origin_person_image" src="" alt="請選擇原始圖片">
+        </div>
+
+        <div class="img-box">
+            <h3>服裝圖片</h3>
+            <img id="show_want_tryon_cloth" src="" alt="請選擇服裝圖片">
+        </div>
+
+        <div class="img-box">
+            <h3>生成結果</h3>
+            <img id="result" src="" alt="尚未生成">
+        </div>
+    </div>
+    
+
+    <script src="../static/dist/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+img {
+  max-width: 192px;  /* 限制最大寬度 */
+  max-height: 256px; /* 限制最大高度 */
+  width: auto;       /* 自動調整寬度，保持比例 */
+  height: auto;      /* 自動調整高度，保持比例 */
+  border: 1px solid #ccc; /* 設置邊框 */
+}

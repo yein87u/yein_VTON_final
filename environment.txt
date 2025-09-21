@@ -1,0 +1,13 @@
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+conda install numpy
+pip install monai
+pip install opencv-python
+pip install pycocotools
+pip install Pillow
+conda install cupy
+conda install tqdm
+conda install lpips
+pip install torch_fidelity
+conda install tensorboard
+
+mlflow
